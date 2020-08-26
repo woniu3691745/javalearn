@@ -21,6 +21,8 @@ public class Adapter implements Target {
 
     @Override
     public void request() {
+        // 使原有接口和新的接口关联上
+        // 新业务和老业务集成在一起
         adaptee.specificRequest();
     }
 }
