@@ -15,5 +15,17 @@
 > 3. Javassist(字节码)
 > 4. ASM库
 <br>
+
+###区别
+1.JDK和CGLib的区别
+
+    JDK动态代理只能对实现了接口的类生成代理，而不能针对类;
+    CGLib是针对类实现代理，主要是对指定的类生成一个子类，覆盖其中的方法（继承）;
+2.Spring在选择用JDK还是CGLib的依据
+
+    当Bean实现接口时，Spring就会用JDK的动态代理;
+    当Bean没有实现接口时，Spring使用CGLib来实现;
+    可以强制使用CGLib（在Spring配置中加入<aop:aspectj-autoproxy proxy-target-class=“true”/>）;
+
 ---
 [代理 Proxy](https://developer.ibm.com/zh/articles/j-lo-proxy-pattern/)
