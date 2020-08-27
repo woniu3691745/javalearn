@@ -6,7 +6,7 @@ import com.example.demo.pattern.factory.IProduct;
  * @author lidongliang
  * create at: 2020/8/20  11:51 上午
  * <p>
- * 抽象工厂类(抽象类或接口)
+ * 工厂类(抽象类或接口)
  * <p>
  * 工厂模式有一个抽象工厂类对应多个具体工厂实现类;
  * <p>

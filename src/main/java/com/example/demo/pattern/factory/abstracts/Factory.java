@@ -7,6 +7,7 @@ package com.example.demo.pattern.factory.abstracts;
  * 抽象工厂类(抽象类或接口)
  */
 public abstract class Factory {
+
     /**
      * 抽象工厂方法
      * 具体产生什么由子类决定
