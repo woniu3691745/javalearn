@@ -18,11 +18,11 @@ public class InternalSingleton {
     }
 
     // 内部类
-    private static class InternalSingleton_ {
+    private static class InternalSingletonHandler {
         private static final InternalSingleton INSTANCE = new InternalSingleton();
     }
 
     public static InternalSingleton getIsntance() {
-        return InternalSingleton_.INSTANCE;
+        return InternalSingletonHandler.INSTANCE;
     }
 }

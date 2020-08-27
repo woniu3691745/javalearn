@@ -13,13 +13,13 @@ package com.example.demo.pattern.singleton;
 public class Singleton {
 
     /**
-     * instance 成员变量和 getInstance 方法必须是 static 的
+     * 🌟instance 成员变量和 getInstance 方法必须是 static 的
      */
     private static Singleton instance = new Singleton();
 
     /**
-     * 首先单例类必须要有一个 private 访问级别的构造函数
-     * 才能确保单例不会在系统中的其他代码内被实例化
+     * 🌟首先单例类必须要有一个 private 访问级别的构造函数
+     * 🌟才能确保单例不会在系统中的其他代码内被实例化
      */
     private Singleton() {
         System.out.println("Singleton is create");
