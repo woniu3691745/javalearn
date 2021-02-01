@@ -1,5 +1,7 @@
 package com.example.demo.pattern.proxy.dynamic;
 
+import com.example.demo.pattern.proxy.DBQuery;
+
 /**
  * @author lidongliang
  * create at: 2020/8/13  5:10 下午
@@ -11,5 +13,8 @@ public class Main {
     public static void main(String[] args) {
         String request = DBQueryHandler.createProxy().request();
         System.out.println(request);
+
     }
+
+
 }
