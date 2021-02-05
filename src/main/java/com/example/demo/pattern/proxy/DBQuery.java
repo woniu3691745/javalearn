@@ -20,4 +20,10 @@ public class DBQuery implements IDBQuery {
     public String request() {
         return "request string";
     }
+
+    @Override
+    public String request(String name) {
+        System.out.println(name);
+        return name;
+    }
 }

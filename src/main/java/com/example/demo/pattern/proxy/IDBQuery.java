@@ -10,4 +10,6 @@ public interface IDBQuery {
 
     String request();
 
+    String request(String name);
+
 }

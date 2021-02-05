@@ -12,7 +12,7 @@ import java.lang.reflect.Method;
  * <p>
  * 定义反射类及重载方法
  */
-public class BookProsyLib implements MethodInterceptor {
+public class BookProxyLib implements MethodInterceptor {
 
     private Object target;
 

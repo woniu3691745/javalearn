@@ -11,6 +11,7 @@ import com.example.demo.pattern.proxy.DBQuery;
 public class Main {
 
     public static void main(String[] args) {
+//        System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
         String request = DBQueryHandler.createProxy().request();
         System.out.println(request);
 

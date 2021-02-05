@@ -21,4 +21,9 @@ public class DBQueryProxy implements IDBQuery {
         }
         return real.request();
     }
+
+    @Override
+    public String request(String name) {
+        return name;
+    }
 }
